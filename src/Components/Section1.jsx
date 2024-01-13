@@ -4,7 +4,7 @@ import Button1 from "./Button1";
 function Section1() {
   return (
     <>
-      <div className="max-w-[1345px] w-full mx-auto px-3 pt-12 md:pt-[70px] pb-12 md:pb-[113px] flex flex-wrap">
+      <div className="max-w-[1345px] w-full mx-auto px-3 pt-12 md:pt-[70px] pb-12 lg:pb-[113px] flex flex-wrap">
         <div className="w-full min-[1150px]:w-[48.5%] flex justify-center min-[1150px]:justify-start">
           <div className="relative max-w-[506px] w-full flex justify-center">
             <div className="hidden sm:block w-[416px] h-[336px] bg-gradient-to-l from-[#8C939B] to-[#243040] absolute top-0 left-0 z-[1]"></div>

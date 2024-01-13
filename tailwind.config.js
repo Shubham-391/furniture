@@ -5,7 +5,7 @@ export default {
     extend: {
       backgroundImage: {
         headerbg: "url('/src/assets/images/headerbg.webp')",
-        chair1: "url('/src/assets/images/section1chair.png')",
+        chair1: "url('/src/assets/images/section1chair.webp')",
       },
     },
     fontFamily: {
