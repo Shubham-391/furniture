@@ -6,6 +6,8 @@ export default {
       backgroundImage: {
         headerbg: "url('/src/assets/images/headerbg.webp')",
         chair1: "url('/src/assets/images/section1chair.webp')",
+        section5bg1: "url('/src/assets/images/section5bg1.webp')",
+        section5bg2: "url('/src/assets/images/section5bg2.webp')",
       },
     },
     fontFamily: {

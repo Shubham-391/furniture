@@ -2,8 +2,19 @@
 .section2Slider .slick-slide {
   margin-right: 21px !important;
 }
+
+.section5Slider .slick-slide.slick-active.slick-current div .item {
+  box-shadow: 6px 13px 38px 0px rgba(0, 0, 0, 0.12) !important;
+}
+
 @media (min-width: 640px) {
-  .section2Slider .slick-slide {
-    margin-right: 21px !important;
+  .section5Slider .slick-slide {
+    margin-right: 27px !important;
+  }
+  .section5Slider .slick-list {
+    height: 531px !important;
+  }
+  .section5Slider .slick-list .slick-track {
+    height: 531px !important;
   }
 }
