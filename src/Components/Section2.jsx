@@ -52,7 +52,7 @@ function Section2() {
       <div className="min-h-[659px] flex items-end relative overflow-hidden">
         <div className="hidden min-[350px]:block w-[60%] lg:w-[46%] min-[1600px]:w-[741px] h-[417px] bg-gradient-to-b from-[#243040] to-[#8B929B] absolute top-[41%] lg:top-0 right-0"></div>
         <div className="w-full h-[878px] min-[330px]:h-auto lg:h-[506px] bg-[rgba(45,57,73,0.04)]">
-          <div className="w-full max-w-[1605px] pl-3 ml-auto min-[1920px]:mr-auto flex flex-col lg:flex-row">
+          <div className="w-full max-w-[1605px] min-[1920px]:max-w-[1345px] pl-3 ml-auto min-[1920px]:mr-auto flex flex-col lg:flex-row">
             <div className="w-full lg:w-[34%]">
               <div className="max-w-[436px] w-full">
                 <h2 className="text-[#BD7D41] font-poppins text-xl not-italic font-normal leading-normal mt-12 lg:mt-10 pl-[104px] relative before:w-[95px] before:h-[1px] before:bg-black before:absolute before:left-0 before:top-[50%] mb-[29px]">
