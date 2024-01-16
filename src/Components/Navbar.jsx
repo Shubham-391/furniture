@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/images/logo.webp";
 import { Link, Route, Routes } from "react-router-dom";
-import Home from "../Pages/Home";
-import About from "../Pages/About";
-import Shop from "../Pages/Shop";
-import Contact from "../Pages/Contact";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -124,12 +120,6 @@ function Navbar() {
           </li>
         </ul>
       </div>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Shop" element={<Shop />} />
-        <Route path="/Contact" element={<Contact />} />
-      </Routes>
     </>
   );
 }

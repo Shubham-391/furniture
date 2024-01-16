@@ -1,26 +1,29 @@
 import { useState } from 'react';
+import { Link, Route, Routes } from "react-router-dom";
 import './App.css';
 import Header from './Components/Header';
-import Section1 from './Components/Section1';
-import Section2 from './Components/Section2';
-import Section3 from './Components/Section3';
-import Section4 from './Components/Section4';
-import Section5 from './Components/Section5';
-import Section6 from './Components/Section6';
+import Top from './Components/Top';
+import Preloader from './Components/Preloader';
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Shop from './Pages/Shop';
+import Contact from './Pages/Contact';
 
 function App() {
 
   return (
     <>
+      <Preloader />
       <Header />
-      <Section1 />
-      <Section2/>
-      <Section3 />
-      <Section4 />
-      <Section5 />
-      <Section6/>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/About" element={<About/>} />
+        <Route path="/Shop" element={<Shop/>} />
+        <Route path="/Contact" element={<Contact/>} />
+      </Routes>
+      <Top />
     </>
-  )
+  );
 }
 
 export default App
