@@ -55,8 +55,13 @@ function Section5() {
   };
   return (
     <>
-      <div className="bg-white mt-[45px] ">
-        <div className="max-w-[1341px] mx-auto px-3 mb-[66px]">
+      <div className="bg-white mt-[45px] overflow-hidden">
+        <div
+          className="max-w-[1341px] mx-auto px-3 mb-[66px]"
+          data-aos="zoom-in"
+          data-aos-once="true"
+          data-aos-duration="1000"
+        >
           <p className="text-[#BD7D41] font-poppins text-xl not-italic font-normal leading-normal pl-[104px] relative before:absolute before:w-[95px] before:h-[1px] before:bg-black before:top-[50%] before:left-0 mb-[19px]">
             Shopping Store
           </p>
@@ -64,7 +69,12 @@ function Section5() {
             Latest Deal
           </h2>
         </div>
-        <div className="max-w-[1571px] mx-auto pl-3 pr-3 min-[1200px]:pr-[15px] relative">
+        <div
+          className="max-w-[1571px] mx-auto pl-3 pr-3 min-[1200px]:pr-[15px] relative"
+          data-aos="zoom-in"
+          data-aos-once="true"
+          data-aos-duration="1000"
+        >
           <button
             className="w-[99px] h-[99px] bg-white drop-shadow-[2px_7px_16px_rgba(0,0,0,0.08)] rounded-[50%] justify-center items-center border border-solid border-transparent duration-300 hover:border-black absolute left-0 top-[40%] hidden min-[1550px]:flex"
             onClick={() => slider2?.current?.slickPrev()}
@@ -171,33 +181,52 @@ function Section5() {
         </div>
 
         <div className="pt-[90px] max-w-[1343px] mx-auto px-3 flex items-center flex-col min-[1200px]:flex-row gap-9 pb-12 md:pb-[109px]">
-          <div className="bg-section5bg1 bg-cover bg-no-repeat bg-center max-w-[642px] w-full  min-h-[363px]">
-            <p className="mt-8 text-black font-poppins text-xl not-italic font-normal leading-normal relative before:absolute before:w-[43px] sm:before:w-[95px] before:h-[1px] before:bg-black before:left-0 before:top-[50%] pl-[54px] sm:pl-[107px] mb-5">
+          <div
+            className="bg-section5bg1 bg-cover bg-no-repeat bg-center max-w-[642px] w-full  min-h-[363px]"
+            
+          >
+            <p className="mt-8 text-black font-poppins text-xl not-italic font-normal leading-normal relative before:absolute before:w-[43px] sm:before:w-[95px] before:h-[1px] before:bg-black before:left-0 before:top-[50%] pl-[54px] sm:pl-[107px] mb-5" data-aos="fade-right"
+            data-aos-once="true"
+            data-aos-duration="1000">
               Festival Offer
             </p>
-            <h2 className="text-[#BD7D41] font-poppins text-[35px] not-italic font-bold leading-normal pl-[54px] sm:pl-[107px]">
+            <h2 className="text-[#BD7D41] font-poppins text-[35px] not-italic font-bold leading-normal pl-[54px] sm:pl-[107px]" data-aos="fade-right"
+            data-aos-once="true"
+            data-aos-duration="1000">
               Upto 40% Off
             </h2>
-            <p className="max-w-[369px] text-[rgba(0,0,0,0.70)] font-poppins text-lg font-normal not-italic leading-normal pl-[54px] sm:pl-[107px] mb-[38px]">
+            <p className="max-w-[369px] text-[rgba(0,0,0,0.70)] font-poppins text-lg font-normal not-italic leading-normal pl-[54px] sm:pl-[107px] mb-[38px]" data-aos="fade-right"
+            data-aos-once="true"
+            data-aos-duration="1000">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit
             </p>
-            <div className="pl-[54px] sm:pl-[107px] pb-[71px]">
+            <div className="pl-[54px] sm:pl-[107px] pb-[71px]" data-aos="fade-right"
+            data-aos-once="true"
+            data-aos-duration="1000">
               <button className="bg-[#BD7D41] hover:text-black duration-300 py-[10px] pl-[12px] pr-[13px] text-white font-poppins text-base sm:text-xl not-italic font-medium leading-normal">
                 ADD TO CART
               </button>
             </div>
           </div>
           <div className="bg-section5bg2 bg-cover bg-no-repeat bg-center max-w-[642px] w-full min-h-[363px]">
-            <p className="mt-8 text-black font-poppins text-xl not-italic font-normal leading-normal relative before:absolute before:w-[43px] sm:before:w-[95px] before:h-[1px] before:bg-black before:left-0 before:top-[50%] pl-[54px] sm:pl-[107px] mb-5">
+            <p className="mt-8 text-black font-poppins text-xl not-italic font-normal leading-normal relative before:absolute before:w-[43px] sm:before:w-[95px] before:h-[1px] before:bg-black before:left-0 before:top-[50%] pl-[54px] sm:pl-[107px] mb-5" data-aos="fade-right"
+            data-aos-once="true"
+            data-aos-duration="1000">
               Festival Offer
             </p>
-            <h2 className="text-[#BD7D41] font-poppins text-[35px] not-italic font-bold leading-normal pl-[54px] sm:pl-[107px]">
+            <h2 className="text-[#BD7D41] font-poppins text-[35px] not-italic font-bold leading-normal pl-[54px] sm:pl-[107px]" data-aos="fade-right"
+            data-aos-once="true"
+            data-aos-duration="1000">
               Upto 40% Off
             </h2>
-            <p className="max-w-[369px] text-[rgba(0,0,0,0.70)] font-poppins text-lg font-normal not-italic leading-normal pl-[54px] sm:pl-[107px] mb-[38px]">
+            <p className="max-w-[369px] text-[rgba(0,0,0,0.70)] font-poppins text-lg font-normal not-italic leading-normal pl-[54px] sm:pl-[107px] mb-[38px]" data-aos="fade-right"
+            data-aos-once="true"
+            data-aos-duration="1000">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit
             </p>
-            <div className="pl-[54px] sm:pl-[107px] pb-[71px]">
+            <div className="pl-[54px] sm:pl-[107px] pb-[71px]" data-aos="fade-right"
+            data-aos-once="true"
+            data-aos-duration="1000">
               <button className="bg-[#BD7D41] hover:text-black duration-300 py-[10px] pl-[12px] pr-[13px] text-white font-poppins text-base sm:text-xl not-italic font-medium leading-normal">
                 ADD TO CART
               </button>

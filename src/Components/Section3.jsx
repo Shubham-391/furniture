@@ -55,6 +55,9 @@ function Section3() {
           <div className="hidden min-[900px]:flex flex-wrap gap-x-[27px] gap-y-[42px] justify-center min-[1200px]:pr-[5px]">
             {sofaData2.map((sofaData2, index) => (
               <div
+                data-aos="fade-down"
+                data-aos-once="true"
+                data-aos-duration="1000"
                 className="w-full max-w-[422px] duration-300 bg-white shadow-[0px_0px_0px_0px_rgba(0,0,0,0.12)] hover:shadow-[6px_13px_38px_0px_rgba(0,0,0,0.12)] pt-[18px] px-[23px] pb-7 min-[450px]:pb-[53px]"
                 key={index}
               >
@@ -83,7 +86,12 @@ function Section3() {
               </div>
             ))}
           </div>
-          <div className="min-[900px]:hidden">
+          <div
+            className="min-[900px]:hidden"
+            data-aos="zoom-in"
+            data-aos-once="true"
+            data-aos-duration="1000"
+          >
             <Slider className="section3Slider" {...settings}>
               {sofaData2.map((sofaData2, index) => (
                 <div

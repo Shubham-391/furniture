@@ -31,8 +31,8 @@ function Section1() {
             </>
           ))
         : document.body.classList.remove("overflow-hidden")}
-      <div className="max-w-[1345px] w-full mx-auto px-3 pt-12 md:pt-[70px] pb-12 lg:pb-[113px] flex flex-wrap">
-        <div className="w-full min-[1150px]:w-[48.5%] flex justify-center min-[1150px]:justify-start">
+      <div className="max-w-[1345px] w-full mx-auto px-3 pt-12 md:pt-[70px] pb-12 lg:pb-[113px] flex flex-wrap overflow-hidden">
+        <div className="w-full min-[1150px]:w-[48.5%] flex justify-center min-[1150px]:justify-start" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000">
           <div className="relative max-w-[506px] w-full flex justify-center">
             <div className="hidden sm:block w-[416px] h-[336px] bg-gradient-to-l from-[#8C939B] to-[#243040] absolute top-0 left-0 z-[1]"></div>
             <div className="w-[296px] sm:w-[456px] h-[325px] sm:h-[498px] bg-chair1 bg-no-repeat bg-center bg-contain shadow-[3px_8px_26px_0px_rgba(0,0,0,0.12)] flex items-end justify-end relative sm:mt-[64px] sm:ml-[50px] z-[2]">
@@ -66,7 +66,7 @@ function Section1() {
             </div>
           </div>
         </div>
-        <div className="w-full min-[1150px]:w-[51.5%] flex justify-center min-[1150px]:justify-start">
+        <div className="w-full min-[1150px]:w-[51.5%] flex justify-center min-[1150px]:justify-start" data-aos="zoom-out" data-aos-once="true" data-aos-duration="1000">
           <div className="max-w-[596px] mt-[62px]">
             <p className="text-[#BD7D41] font-poppins text-xl not-italic font-normal leading-normal relative before:w-[95px] before:h-[1px] before:bg-black before:absolute before:left-0 before:top-[50%] pl-[106px] mb-[19px]">
               Welcome Our Story
