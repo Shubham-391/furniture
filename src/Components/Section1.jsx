@@ -1,9 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import Button1 from "./Button1";
 
 function Section1() {
+  const [showModal, setShowModal] = useState(false);
   return (
     <>
+      {showModal
+        ? (document.body.classList.add("overflow-hidden"),
+          (
+            <>
+              <div className="fixed top-0 bottom-0 left-0 right-0 w-full h-full z-10 bg-[rgba(0,0,0,0.7)] flex justify-center items-center p-3">
+                <div className="max-w-[800px] w-full h-full bg-white flex flex-col gap-5 justify-center items-center rounded p-3">
+                  <iframe
+                    className="w-full h-full max-w-[600px] max-h-[600px]"
+                    src="https://www.youtube.com/embed/mjPtSgfk-hY"
+                    title="Smart Furniture | Ingenious Space Saving Furniture Ideas And Home Designs"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                  <button
+                    onClick={() => setShowModal(false)}
+                    className={`bg-[#BD7D41] p-3 text-white text-center font-poppins text-xl not-italic font-semibold leading-normal duration-300 relative group overflow-hidden inline-flex`}
+                  >
+                    <span className="absolute duration-300 inset-0 bg-sky-400 w-0 group-hover:w-full"></span>
+                    <span className="relative">Close</span>
+                  </button>
+                </div>
+              </div>
+            </>
+          ))
+        : document.body.classList.remove("overflow-hidden")}
       <div className="max-w-[1345px] w-full mx-auto px-3 pt-12 md:pt-[70px] pb-12 lg:pb-[113px] flex flex-wrap">
         <div className="w-full min-[1150px]:w-[48.5%] flex justify-center min-[1150px]:justify-start">
           <div className="relative max-w-[506px] w-full flex justify-center">
@@ -15,6 +42,7 @@ function Section1() {
                 </p>
                 <span className="w-[66px] h-[1px] bg-[#243040] ml-[14px] mr-[7px]"></span>
                 <svg
+                  onClick={() => setShowModal(true)}
                   className="group shrink-0"
                   xmlns="http://www.w3.org/2000/svg"
                   width="45"

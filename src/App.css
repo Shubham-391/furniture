@@ -8,6 +8,11 @@
   box-shadow: 6px 13px 38px 0px rgba(0, 0, 0, 0.12) !important;
 }
 
+.section3Slider .slick-slide{
+  display: flex !important;
+  justify-content: center;
+}
+
 @media (min-width: 640px) {
   .section5Slider .slick-slide {
     margin-right: 27px !important;

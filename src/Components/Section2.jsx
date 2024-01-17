@@ -37,12 +37,15 @@ function Section2() {
         breakpoint: 1200,
         settings: {
           slidesToShow: 2,
+          autoplay:true,
         },
       },
       {
         breakpoint: 640,
         settings: {
           slidesToShow: 1,
+          autoplay: true,
+          dots: true,
         },
       },
     ],

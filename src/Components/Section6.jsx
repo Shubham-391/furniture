@@ -31,6 +31,7 @@ export default class Section6 extends Component {
       focusOnSelect: true,
       centerMode: true,
       infinite: true,
+      autoplay: true,
       centerMode: true,
       centerPadding: "0",
       asNavFor: this.state.nav2,

@@ -4,6 +4,7 @@ import { Link, Route, Routes } from "react-router-dom";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
+  const [showModal2, setShowModal2] = useState(false);
   {
     open == false
       ? document.body.classList.remove("overflow-hidden")
@@ -11,13 +12,48 @@ function Navbar() {
   }
   return (
     <>
+      {showModal2
+        ? (document.body.classList.add("overflow-hidden"),
+          (
+            <>
+              <div
+                className="absolute top-0 bottom-0 left-0 right-0 w-full h-full z-[8] bg-[rgba(0,0,0,0.7)] flex justify-center items-center p-3"
+                onClick={() => setShowModal2(false)}
+              ></div>
+              <div className="max-w-[536px] w-full h-[56px] bg-transparent p-3 absolute top-[10%] left-[50%] translate-x-[-50%] right-0 z-10 flex justify-center">
+                <div className="bg-white w-[95%] h-[56px] flex items-center rounded gap-2 p-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19"
+                    height="19"
+                    viewBox="0 0 19 19"
+                    fill="none"
+                  >
+                    <path
+                      d="M8 16C9.77498 15.9996 11.4988 15.4054 12.897 14.312L17.293 18.708L18.707 17.294L14.311 12.898C15.405 11.4997 15.9996 9.77544 16 8C16 3.589 12.411 0 8 0C3.589 0 0 3.589 0 8C0 12.411 3.589 16 8 16ZM8 2C11.309 2 14 4.691 14 8C14 11.309 11.309 14 8 14C4.691 14 2 11.309 2 8C2 4.691 4.691 2 8 2Z"
+                      fill="black"
+                    />
+                  </svg>
+                  <input
+                    placeholder="Search"
+                    className="w-full"
+                    type="text"
+                    name="search"
+                    id="search"
+                />
+                <button className="w-[28px] h-[24px] bg-red shrink-0 bg-[rgba(0,0,0,0.2)] rounded flex justify-center items-center text-[10px] font-medium" onClick={()=>setShowModal2(false)}>ESC</button>
+                </div>
+              </div>
+            </>
+          ))
+        : document.body.classList.remove("overflow-hidden")}
       <div className="max-w-[1345px] w-full mx-auto px-3 flex justify-between items-center h-[91px]">
         <div className="w-[150px] sm:w-[244px] h-[33px] sm:h-[61px] relative z-[6]">
           <img className="w-full" src={logo} alt="logo" />
         </div>
         <div className="flex min-[992px]:hidden z-[6] gap-4 items-center pt-2">
           <svg
-            onClick={() => setOpen(false)}
+            onClick={() => setShowModal2(true)}
             xmlns="http://www.w3.org/2000/svg"
             width="19"
             height="19"
@@ -66,7 +102,7 @@ function Navbar() {
           </div>
         </div>
         <ul
-          className={`duration-300 flex items-center gap-[50px] bg-black fixed left-[-100%] top-0 w-full h-full flex-col justify-center min-[992px]:static min-[992px]:bg-transparent min-[992px]:gap-0 min-[992px]:right-0 min-[992px]:flex-row z-[5] min-[1200px]:pr-1 min-[992px]:justify-end ${
+          className={`duration-300 flex items-center gap-[50px] bg-[#405268] fixed left-[-100%] top-0 w-full h-full flex-col justify-center min-[992px]:static min-[992px]:bg-transparent min-[992px]:gap-0 min-[992px]:right-0 min-[992px]:flex-row z-[5] min-[1200px]:pr-1 min-[992px]:justify-end ${
             open == false ? "" : "left-[0%]"
           }`}
         >
@@ -92,6 +128,7 @@ function Navbar() {
           </li>
           <li className="ml-[40px] mr-[28px] cursor-pointer hidden min-[992px]:block">
             <svg
+              onClick={() => setShowModal2(true)}
               xmlns="http://www.w3.org/2000/svg"
               width="19"
               height="19"

@@ -5,7 +5,7 @@ function Footer() {
   return (
     <>
       <div className="w-full min-h-[434px] bg-[#243040]">
-        <div className="max-w-[1331px] w-full px-3 mx-auto pt-[87px] flex pb-12 min-[1200px]:pb-[81px] flex-wrap gap-y-6">
+        <div className="max-w-[1331px] w-full px-3 mx-auto pt-12 md:pt-[87px] flex pb-6 min-[1200px]:pb-[81px] flex-wrap gap-y-6">
           <div className="w-full min-[900px]:w-[50%] min-[1200px]:w-[61%]">
             <div className="max-w-[338px] w-full">
               <img
@@ -229,7 +229,7 @@ function Footer() {
           </div>
         </div>
         <div className="w-full h-[1px] bg-[rgba(255,255,255,0.50)]"></div>
-        <p className='pt-[29px] pb-[27px] text-white font-roboto text-sm not-italic font-normal leading-normal text-center'>@copyright2021</p>
+        <p className='pt-4 md:pt-[29px] pb-4 md:pb-[27px] text-white font-roboto text-sm not-italic font-normal leading-normal text-center'>@copyright2021</p>
       </div>
     </>
   );
