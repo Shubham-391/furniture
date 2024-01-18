@@ -93,7 +93,7 @@ function Footer() {
                 ABOUT STORE
               </li>
               <li className="w-[130px] h-[1px] bg-[#BD7D41] mb-[19px]"></li>
-              <li className="mb-[13px]">
+              <li className="mb-[8px]">
                 <a
                   className="text-white font-roboto text-sm not-italic font-normal leading-normal relative after:absolute after:w-0 after:h-[1px] after:bg-white after:left-[50%] hover:after:w-full hover:after:left-[0%] after:bottom-[-2px] after:duration-300"
                   href="#"
@@ -101,7 +101,7 @@ function Footer() {
                   Home
                 </a>
               </li>
-              <li className="mb-[13px]">
+              <li className="mb-[8px]">
                 <a
                   className="text-white font-roboto text-sm not-italic font-normal leading-normal relative after:absolute after:w-0 after:h-[1px] after:bg-white after:left-[50%] hover:after:w-full hover:after:left-[0%] after:bottom-[-2px] after:duration-300"
                   href="#"
@@ -109,7 +109,7 @@ function Footer() {
                   Shop
                 </a>
               </li>
-              <li className="mb-[13px]">
+              <li className="mb-[8px]">
                 <a
                   className="text-white font-roboto text-sm not-italic font-normal leading-normal relative after:absolute after:w-0 after:h-[1px] after:bg-white after:left-[50%] hover:after:w-full hover:after:left-[0%] after:bottom-[-2px] after:duration-300"
                   href="#"
@@ -117,7 +117,7 @@ function Footer() {
                   Product
                 </a>
               </li>
-              <li className="mb-[13px]">
+              <li className="mb-[8px]">
                 <a
                   className="text-white font-roboto text-sm not-italic font-normal leading-normal relative after:absolute after:w-0 after:h-[1px] after:bg-white after:left-[50%] hover:after:w-full hover:after:left-[0%] after:bottom-[-2px] after:duration-300"
                   href="#"
@@ -125,7 +125,7 @@ function Footer() {
                   Festival Offer
                 </a>
               </li>
-              <li className="mb-[13px]">
+              <li>
                 <a
                   className="text-white font-roboto text-sm not-italic font-normal leading-normal relative after:absolute after:w-0 after:h-[1px] after:bg-white after:left-[50%] hover:after:w-full hover:after:left-[0%] after:bottom-[-2px] after:duration-300"
                   href="#"
@@ -139,7 +139,7 @@ function Footer() {
                 BRANDS
               </li>
               <li className="w-[130px] h-[1px] bg-[#BD7D41] mb-[19px]"></li>
-              <li className="mb-[13px]">
+              <li className="mb-[8px]">
                 <a
                   className="text-white font-roboto text-sm not-italic font-normal leading-normal relative after:absolute after:w-0 after:h-[1px] after:bg-white after:left-[50%] hover:after:w-full hover:after:left-[0%] after:bottom-[-2px] after:duration-300"
                   href="#"
@@ -147,7 +147,7 @@ function Footer() {
                   Album
                 </a>
               </li>
-              <li className="mb-[13px]">
+              <li className="mb-[8px]">
                 <a
                   className="text-white font-roboto text-sm not-italic font-normal leading-normal relative after:absolute after:w-0 after:h-[1px] after:bg-white after:left-[50%] hover:after:w-full hover:after:left-[0%] after:bottom-[-2px] after:duration-300"
                   href="#"
@@ -155,7 +155,7 @@ function Footer() {
                   Shop
                 </a>
               </li>
-              <li className="mb-[13px]">
+              <li className="mb-[8px]">
                 <a
                   className="text-white font-roboto text-sm not-italic font-normal leading-normal relative after:absolute after:w-0 after:h-[1px] after:bg-white after:left-[50%] hover:after:w-full hover:after:left-[0%] after:bottom-[-2px] after:duration-300"
                   href="#"
@@ -163,7 +163,7 @@ function Footer() {
                   Product
                 </a>
               </li>
-              <li className="mb-[13px]">
+              <li className="mb-[8px]">
                 <a
                   className="text-white font-roboto text-sm not-italic font-normal leading-normal relative after:absolute after:w-0 after:h-[1px] after:bg-white after:left-[50%] hover:after:w-full hover:after:left-[0%] after:bottom-[-2px] after:duration-300"
                   href="#"
@@ -171,7 +171,7 @@ function Footer() {
                   Festival Offer
                 </a>
               </li>
-              <li className="mb-[13px]">
+              <li>
                 <a
                   className="text-white font-roboto text-sm not-italic font-normal leading-normal relative after:absolute after:w-0 after:h-[1px] after:bg-white after:left-[50%] hover:after:w-full hover:after:left-[0%] after:bottom-[-2px] after:duration-300"
                   href="#"
@@ -185,7 +185,7 @@ function Footer() {
                 CATEGORIES
               </li>
               <li className="w-[130px] h-[1px] bg-[#BD7D41] mb-[19px]"></li>
-              <li className="mb-[13px]">
+              <li className="mb-[8px]">
                 <a
                   className="text-white font-roboto text-sm not-italic font-normal leading-normal relative after:absolute after:w-0 after:h-[1px] after:bg-white after:left-[50%] hover:after:w-full hover:after:left-[0%] after:bottom-[-2px] after:duration-300"
                   href="#"
@@ -193,7 +193,7 @@ function Footer() {
                   Single
                 </a>
               </li>
-              <li className="mb-[13px]">
+              <li className="mb-[8px]">
                 <a
                   className="text-white font-roboto text-sm not-italic font-normal leading-normal relative after:absolute after:w-0 after:h-[1px] after:bg-white after:left-[50%] hover:after:w-full hover:after:left-[0%] after:bottom-[-2px] after:duration-300"
                   href="#"
@@ -201,7 +201,7 @@ function Footer() {
                   Aleeper Sofas
                 </a>
               </li>
-              <li className="mb-[13px]">
+              <li className="mb-[8px]">
                 <a
                   className="text-white font-roboto text-sm not-italic font-normal leading-normal relative after:absolute after:w-0 after:h-[1px] after:bg-white after:left-[50%] hover:after:w-full hover:after:left-[0%] after:bottom-[-2px] after:duration-300"
                   href="#"
@@ -209,7 +209,7 @@ function Footer() {
                   Accent Chairs
                 </a>
               </li>
-              <li className="mb-[13px]">
+              <li className="mb-[8px]">
                 <a
                   className="text-white font-roboto text-sm not-italic font-normal leading-normal relative after:absolute after:w-0 after:h-[1px] after:bg-white after:left-[50%] hover:after:w-full hover:after:left-[0%] after:bottom-[-2px] after:duration-300"
                   href="#"
@@ -217,7 +217,7 @@ function Footer() {
                   Festival Offer
                 </a>
               </li>
-              <li className="mb-[13px]">
+              <li>
                 <a
                   className="text-white font-roboto text-sm not-italic font-normal leading-normal relative after:absolute after:w-0 after:h-[1px] after:bg-white after:left-[50%] hover:after:w-full hover:after:left-[0%] after:bottom-[-2px] after:duration-300"
                   href="#"
