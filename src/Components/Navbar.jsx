@@ -6,9 +6,9 @@ function Navbar() {
   const [open, setOpen] = useState(false);
   const [showModal2, setShowModal2] = useState(false);
   {
-    open == false
-      ? document.body.classList.remove("overflow-hidden")
-      : document.body.classList.add("overflow-hidden");
+    open
+      ? document.body.classList.add("hide")
+      : document.body.classList.remove("hide");
   }
   return (
     <>
@@ -89,7 +89,7 @@ function Navbar() {
             />
           </svg>
           <div
-            className={`flex w-[30px] min-[400px]:w-[35px] h-[25px] duration-300 flex-col items-center justify-between ${
+            className={`flex w-[30px] min-[400px]:w-[35px] h-[25px] duration-300 flex-col items-center justify-between cursor-pointer ${
               open ? "" : "translate -y-[10px]"
             }`}
             onClick={() => setOpen(!open)}
