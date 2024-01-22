@@ -9,13 +9,13 @@ function Navbar() {
     open
       ? document.body.classList.add("hide")
       : document.body.classList.remove("hide");
-  }
+  }  
   return (
     <>
-      {showModal2
+      {/* search modal */}
+      {showModal2 == true
         ? document.body.classList.add("overflow-hidden")
         : document.body.classList.remove("overflow-hidden")}
-      {/* search modal */}
       <div
         className={`absolute duration-300 top-0 bottom-0 left-0 right-0 w-full h-full bg-[rgba(0,0,0,0.7)] flex justify-center items-center p-3 ${
           showModal2 == false ? "opacity-0 z-0" : "opacity-100 z-[8]"
@@ -56,7 +56,9 @@ function Navbar() {
             ESC
           </button>
         </div>
-      </div>
+      </div>  
+
+      {/* page */}
       <div className="max-w-[1345px] w-full mx-auto px-3 flex justify-between items-center h-[91px]">
         <div className="w-[150px] sm:w-[244px] h-[33px] sm:h-[61px] relative z-[6]">
           <img className="w-full" src={logo} alt="logo" />
@@ -76,7 +78,7 @@ function Navbar() {
             />
           </svg>
           <svg
-            onClick={() => setOpen(false)}
+            onClick={() => setCart(!cart)}
             xmlns="http://www.w3.org/2000/svg"
             width="26"
             height="23"
@@ -89,9 +91,7 @@ function Navbar() {
             />
           </svg>
           <div
-            className={`flex w-[30px] min-[400px]:w-[35px] h-[25px] duration-300 flex-col items-center justify-between cursor-pointer ${
-              open ? "" : "translate -y-[10px]"
-            }`}
+            className={`flex w-[30px] min-[400px]:w-[35px] h-[25px] duration-300 flex-col items-center justify-between cursor-pointer`}
             onClick={() => setOpen(!open)}
           >
             <span
@@ -153,6 +153,7 @@ function Navbar() {
           </li>
           <li className="cursor-pointer hidden min-[992px]:block">
             <svg
+              onClick={() => setCart(!cart)}
               xmlns="http://www.w3.org/2000/svg"
               width="26"
               height="23"

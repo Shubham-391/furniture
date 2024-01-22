@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from "react";
 import Section2 from "../Components/Section2";
 import Section3 from "../Components/Section3";
 import Section4 from "../Components/Section4";
@@ -17,4 +17,4 @@ function Shop() {
   );
 }
 
-export default Shop
+export default Shop;
