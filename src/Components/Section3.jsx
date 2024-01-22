@@ -85,7 +85,7 @@ function Section3() {
         onClick={() => setCart(false)}
       ></div>
       <div
-        className={`fixed duration-300 bg-white shadow-[0px_0px_0px_0px_rgba(0,0,0,0.12)] w-full sm:w-1/2 md:w-1/4 top-0 h-full z-10 overflow-y-scroll ${
+        className={`fixed duration-300 bg-white shadow-[0px_0px_0px_0px_rgba(0,0,0,0.12)] w-full sm:w-1/2 xl:w-1/4 top-0 h-full z-10 overflow-y-scroll ${
           cart == false ? "left-[-100%]" : "left-[0%]"
         }`}
       >
@@ -98,39 +98,46 @@ function Section3() {
               alt="close"
             />
           </div>
-
-          <div>{cartItems.length === 0 && <div>Cart is empty</div>}</div>
-          {cartItems.map((item, index) => (
-            <div
-              className="w-full max-w-[422px] duration-300 bg-white shadow-[0px_0px_0px_0px_rgba(0,0,0,0.12)] hover:shadow-[6px_13px_38px_0px_rgba(0,0,0,0.12)] pt-[18px] px-[23px] pb-7 min-[450px]:pb-[53px]"
-              key={index}
-            >
-              <img className="w-full mb-[19px]" src={item.img} alt="sofa" />
-              <div className="flex justify-between items-center mb-4">
-                <p className="text-black font-poppins text-xl not-italic font-medium leading-normal">
-                  Single Sofa
+          <div className="flex flex-col items-center w-full">
+            <div>{cartItems.length === 0 && <div>Cart is empty</div>}</div>
+            {cartItems.map((item, index) => (
+              <div
+                className="w-full max-w-[422px] duration-300 bg-white shadow-[0px_0px_0px_0px_rgba(0,0,0,0.12)] hover:shadow-[6px_13px_38px_0px_rgba(0,0,0,0.12)] pt-[18px] px-[23px] pb-7 min-[450px]:pb-[53px]"
+                key={index}
+              >
+                <img className="w-full mb-[19px]" src={item.img} alt="sofa" />
+                <div className="flex justify-between items-center mb-4">
+                  <p className="text-black font-poppins text-xl not-italic font-medium leading-normal">
+                    Single Sofa
+                  </p>
+                  <img src={stars} alt="rating" />
+                </div>
+                <p className="text-[rgba(0,0,0,0.70)] font-poppins text-lg not-italic font-normal leading-normal mb-4">
+                  Lorem ipsum dolor{" "}
                 </p>
-                <img src={stars} alt="rating" />
+                <div className="flex justify-between items-center">
+                  <p className="text-black font-poppins text-xl sm:text-[28.7px] not-italic font-semibold leading-normal">
+                    ₹<span className="ml-[3px]">1200.00</span>
+                  </p>
+                  <button
+                    onClick={() => onAdd(item)}
+                    className="text-black font-poppins text-xl sm:text-[28.7px] not-italic font-semibold leading-normal"
+                  >
+                    +
+                  </button>
+                  <p className="text-right text-black font-poppins text-base not-italic font-normal leading-normal">
+                    Quantity : {item.qty}
+                  </p>
+                  <button
+                    onClick={() => onRemove(item)}
+                    className="text-black font-poppins text-xl sm:text-[28.7px] not-italic font-semibold leading-normal"
+                  >
+                    -
+                  </button>
+                </div>
               </div>
-              <p className="text-[rgba(0,0,0,0.70)] font-poppins text-lg not-italic font-normal leading-normal mb-4">
-                Lorem ipsum dolor{" "}
-              </p>
-              <div className="flex justify-between items-center">
-                <p className="text-black font-poppins text-xl sm:text-[28.7px] not-italic font-semibold leading-normal">
-                  ₹<span className="ml-[3px]">1200.00</span>
-                </p>
-                <button onClick={() => onAdd(item)} className="text-black font-poppins text-xl sm:text-[28.7px] not-italic font-semibold leading-normal">
-                  +
-                </button>
-                <p className="text-right text-black font-poppins text-base not-italic font-normal leading-normal">
-                  Quantity : {item.qty}
-                </p>
-                <button onClick={() => onRemove(item)} className="text-black font-poppins text-xl sm:text-[28.7px] not-italic font-semibold leading-normal">
-                  -
-                </button>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
       <div className="bg-white pt-12 lg:pt-[135px] pb-12 lg:pb-[169px] overflow-hidden relative">
