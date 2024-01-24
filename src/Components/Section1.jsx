@@ -31,7 +31,7 @@ function Section1() {
             </>
           ))
         : document.body.classList.remove("overflow-hidden")}
-      <div className="max-w-[1345px] w-full mx-auto px-3 pt-12 md:pt-[70px] pb-12 lg:pb-[113px] flex flex-wrap overflow-hidden">
+      <div className="max-w-[1345px] w-full mx-auto px-3 pt-12 md:pt-[70px] pb-12 lg:pb-[113px] flex flex-wrap overflow-hidden relative z-[1]">
         <div className="w-full min-[1150px]:w-[48.5%] flex justify-center min-[1150px]:justify-start" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000">
           <div className="relative max-w-[506px] w-full flex justify-center">
             <div className="hidden sm:block w-[416px] h-[336px] bg-gradient-to-l from-[#8C939B] to-[#243040] absolute top-0 left-0 z-[1]"></div>

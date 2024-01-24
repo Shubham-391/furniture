@@ -4,7 +4,7 @@ import logo from "../assets/images/logo.webp";
 function Footer() {
   return (
     <>
-      <div className="w-full min-h-[434px] bg-[#243040]">
+      <div className="w-full min-h-[434px] bg-[#243040] relative z-[1]">
         <div className="max-w-[1331px] w-full px-3 mx-auto pt-12 md:pt-[87px] flex pb-6 min-[1200px]:pb-[81px] flex-wrap gap-y-6">
           <div className="w-full min-[900px]:w-[50%] min-[1200px]:w-[61%]">
             <div className="max-w-[338px] w-full">

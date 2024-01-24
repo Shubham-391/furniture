@@ -9,7 +9,7 @@ function Header() {
       <div className="bg-headerbg bg-cover bg-no-repeat bg-center min-h-screen min-[1200px]:min-h-[932px] min-[1866px]:min-h-screen flex flex-col">
         <Navbar />
         <div
-          className="grow flex flex-col items-center px-3"
+          className="grow flex flex-col items-center px-3 relative z-[1]"
           data-aos="zoom-in"
           data-aos-once="true"
           data-aos-delay="2000"
